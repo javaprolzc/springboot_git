@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3 th:text="${name}">h3标题</h3>
+    <hr>
+    <div th:object="${hero}">
+        <h3 th:text="*{username}"></h3>
+        <h3 th:text="*{id}"></h3>
+    </div>
+    <hr>
+    <a href="" th:href="@{http://www.baidu.com(id=1, action='lzc')}">打开百度</a>
+    <hr>
+    <img src="" alt="" th:src="@{/云狗.jpg}">
+</body>
+</html>
