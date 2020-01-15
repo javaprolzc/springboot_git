@@ -34,6 +34,6 @@ public class MyController {
     @ResponseBody
     @RequestMapping("/git")
     public String git(){
-        return "hello github";
+        return "hello github update";
     }
 }
